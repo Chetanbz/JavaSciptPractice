@@ -9,7 +9,7 @@ arrayOfNumber.sort(function(a,b) {
                                             return a-b});
 console.log(arrayOfNumber);
 
-console.log("Second Minimum Element is " + arrayOfNumber[1] + " ## Second Maximum Element is " +arrayOfNumber[arrayOfNumber.length-2]);
+console.log("Second Minimum Element is " + arrayOfNumber[1] + " ## Second Maximum Element is " +arrayOfNumber[arrayOfNumber.length-]);
 
 
 
