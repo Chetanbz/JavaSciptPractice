@@ -5,24 +5,12 @@ for (let i = 0 ; i < 10; i++ ){
 }
 console.log(arrayOfNumber);
 
-let minNumber = Math.min(...arrayOfNumber);
-let maxNumber = Math.max(...arrayOfNumber);
-console.log(minNumber + " " + maxNumber);
+arrayOfNumber.sort(function(a,b) {
+                                            return a-b});
+console.log(arrayOfNumber);
 
-var filteredmin = arrayOfNumber.filter(function(value, index, arr){ 
-    return value > minNumber;
-});
+console.log("Second Minimum Element is " + arrayOfNumber[1] + " ## Second Maximum Element is " +arrayOfNumber[arrayOfNumber.length-2]);
 
-var filteredmax = arrayOfNumber.filter(function(value, index, arr){ 
-    return value < maxNumber;
-});
-
-minNumber = Math.min(...filteredmin);
-maxNumber = Math.max(...filteredmax);
-
-console.log("Second Minimum Element is " + minNumber + " ## Second Maximum Element is " +maxNumber);
-
-// max Element Findout
 
 
 function getThreeDigitNumber(){
